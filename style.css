@@ -1,0 +1,258 @@
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  padding: 25px;
+  border-radius: 5px;
+}
+#conteiner {
+  background: #00f260; fallback for old browsers 
+  background: -webkit-linear-gradient(
+    to right,
+    #0575e6,
+    #00f260
+  ); Chrome 10-25, Safari 5.1-6 
+  background: linear-gradient(
+    to right,
+    #0575e6,
+    #00f260
+  );  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari + 
+  text-align: center;
+  border: 5px solid #13afaf;
+  height: 500px;
+  width: 300px;
+  border-radius: 5px;
+}
+.btn-num {
+  text-decoration: none;
+  width: 50px;
+  height: 45px;
+  margin-bottom: 3px;
+  text-align: right;
+  background: rgba(0, 242, 96, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 0.4ms;
+}
+.btn-num:hover {
+  background-color: white;
+}
+.btn-ope {
+  text-decoration: none;
+  width: 20px;
+  height: 35px;
+  margin-top: 1px;
+  margin-bottom: 2px;
+  text-align: right;
+  background: rgba(0, 242, 96, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 0.4ms;
+}
+.btn-ope:hover {
+  background-color: white;
+}
+.btn-clear {
+  text-decoration: none;
+  width: 20px;
+  height: 35px;
+  margin-top: 1px;
+  margin-bottom: 2px;
+  text-align: right;
+  background: rgba(0, 242, 96, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 0.4ms;
+}
+.btn-clear:hover {
+  background-color: white;
+}
+.btn-borrar {
+  text-decoration: none;
+  width: 20px;
+  height: 35px;
+  margin-top: 1px;
+  margin-bottom: 2px;
+  text-align: right;
+  background: rgba(0, 242, 96, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 0.4ms;
+}
+.btn-borrar:hover {
+  background-color: white;
+}
+
+.btn-ope,
+.btn-num {
+  padding: 18px;
+  text-align: right;
+}
+
+input {
+  text-align: center;
+}
+ */
+ * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ body {
+   width: 500px;
+  margin: 4% auto;
+  letter-spacing: 5px;
+  font-size: 1.8rem;
+  background: #159957;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #155799, #159957);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #155799, #159957); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.calculadora {
+  padding: 20px;
+  width: fit-content;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 1px;
+}
+
+.input {
+  border: 1px solid #ddd;
+  border-radius: 1px;
+  height: 60px;
+  width: 365px;
+  padding-right: 15px;
+  padding-top: 10px;
+  text-align: right;
+  margin-right: 6px;
+  font-size: 2.5rem;
+  overflow-x: auto;
+  transition: all .2s ease-in-out;
+  background: rgba( 19, 175, 175, 0.35 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 6.5px );
+  -webkit-backdrop-filter: blur( 6.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.input:hover {
+  border: 1px solid #bbb;
+  -webkit-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+.operador div {
+  display: inline-block;
+  border: 1px solid #bbb;
+  border-radius: 1px;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  margin: 20px 4px 10px 0;
+  cursor: pointer;
+  background-color: #ddd;
+  transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+  background: rgba( 19, 175, 175, 0.35 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 6.5px );
+  -webkit-backdrop-filter: blur( 6.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.operador div:hover {
+  background-color: #2193b0;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: #aaa;
+}
+
+.operador div:active {
+  font-weight: bold;
+}
+
+.panelIzquierda{
+  display: inline-block;
+   
+  
+}
+
+.numeros div {
+  display: inline-block;
+  border: 1px solid #ddd;
+  border-radius: 1px;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 4px 10px 0;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+  background: rgba( 19, 175, 175, 0.35 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 6.5px );
+  -webkit-backdrop-filter: blur( 6.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.numeros div:hover {
+  background-color: #6dd5ed;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: #bbb;
+}
+
+.numbers div:active {
+  font-weight: bold;
+}
+
+div.igual {
+  display: inline-block;
+  border: 1px solid #3079ED;
+  border-radius: 1px;
+  width: 17%;
+  text-align: center;
+  padding: 127px 10px;
+  margin: 10px 6px 10px 0;
+  vertical-align: top;
+  cursor: pointer;
+  color: #FFF;
+  transition: all .2s ease-in-out;
+  background: rgba( 21, 153, 87, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+div.igual:hover {
+  background-color: #2C5364;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: #1857BB;
+}
+
+div.igual:active {
+  font-weight: bold;
+}
